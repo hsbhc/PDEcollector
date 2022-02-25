@@ -1,6 +1,7 @@
 # PDEcollector
 ## Collect PDE and its true solution
 &nbsp;&nbsp;
+### maybe exsit errors in PDE, please use it carefully !
 
 ### PDE
 
