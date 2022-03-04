@@ -1,0 +1,27 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{geometry}
+\geometry{a4paper}
+\title{description}
+\author{bhs}
+\begin{document}
+\maketitle
+
+$$unsteady-stocks-2D$$
+$$V_{t}- \alpha \cdot \nabla^{2} V+ \nabla q  = f,\ \  in \ \ \Omega_{T}$$
+$$\nabla \cdot  V=0,\ \ in \ \Omega_{T}$$
+$$V |_{\partial\Omega}=0,\ \ on \ \ \partial\Omega_{T}$$
+$$V |_{t=0}=V_{0},\ \ on \ \ \Omega$$ \\
+$$\alpha=0.025$$
+$$V=[u_{1}(t,x_{1},x_{2}),u_{2}(t,x_{1},x_{2})]$$
+$$x_{1}\in [0,1] ,x_{2} \in [0,1],t \in [0,1]$$
+$$u_{1}(t,x_{1},x_{2})=2sin(t)sin(\pi x_{1})^{2}sin(\pi x_{2})cos(\pi x_{2})\pi$$
+$$u_{2}(t,x_{1},x_{2})=-2sin(t)sin(\pi x_{2})^{2}sin(\pi x_{1})cos(\pi x_{1})\pi$$
+$$p(t,x_{1},x_{2})=sin(t)cos(\pi x_{1})cos(\pi x_{2})$$
+
+
+\begin{thebibliography}{10}
+\bibitem{ref1}Jing Yue,Jian Li. The Physics Informed Neural Networks for the unsteady Stokes problems[J]. International Journal for Numerical Methods in Fluids.
+\end{thebibliography}
+
+\end{document}
