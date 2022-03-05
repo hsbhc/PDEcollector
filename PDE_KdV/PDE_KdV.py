@@ -1,8 +1,11 @@
+import os
+
 import numpy as np
 import scipy.io as reader
 
-PDE_datafile_sin = 'KdV_sine.mat'
-PDE_datafile_cos = 'KdV_cos.mat'
+abs_dir= os.path.dirname(__file__) + '/'
+PDE_datafile_sin = abs_dir + 'KdV_sine.mat'
+PDE_datafile_cos = abs_dir + 'KdV_cos.mat'
 PDE_dim = 2
 PDE_vars = ['x', 't']
 PDE_scale = {

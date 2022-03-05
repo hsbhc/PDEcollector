@@ -13,7 +13,8 @@
  PDE_name.py
     import numpy as np
     
-    PDE_datafile = 'datafile' # if PDE_analytic_solution = False
+    abs_dir=os.path.dirname(__file__)+'/'
+    PDE_datafile = abs_dir+'datafile' # if PDE_analytic_solution = False
     PDE_dim = 2
     PDE_vars = ['x', 'y']
     PDE_scale = {

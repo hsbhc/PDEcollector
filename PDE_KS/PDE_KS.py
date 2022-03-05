@@ -1,7 +1,9 @@
+import os
+
 import numpy as np
 import scipy.io as reader
-
-PDE_datafile = 'KS.mat'
+abs_dir= os.path.dirname(__file__) + '/'
+PDE_datafile = abs_dir + 'KS.mat'
 PDE_dim = 2
 PDE_vars = ['x', 't']
 PDE_scale = {
