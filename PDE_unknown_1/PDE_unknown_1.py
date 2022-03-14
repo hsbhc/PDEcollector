@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 
 PDE_dim = 2
 PDE_vars = ['x', 'y']
@@ -13,7 +14,8 @@ PDE_boundary_condition = ['PDE_c1(y, x=0)', 'PDE_c2(y, x=1)', 'PDE_c3(x, y=0)', 
 
 
 def PDE_f1(x, y):
-    return np.exp(-x) * (x - 2 + np.power(y, 3) + 6 * y)
+
+    return torch.exp(-x) * (x - 2 + torch.pow(y, 3) + 6 * y)
 
 
 def PDE_c1(y, x=0):

@@ -56,12 +56,12 @@ def PDE_bc1(t, x1, x2):
 
 
 def PDE_u1(t, x1, x2):
-    return 2 * np.sin(t) * np.power(np.sin(np.pi * x1), 2) * np.sin(np.pi * x2) * np.cos(np.pi * x2) * np.pi
+    return 2 * torch.sin(t) * torch.pow(torch.sin(torch.pi * x1), 2) * torch.sin(torch.pi * x2) * torch.cos(torch.pi * x2) * torch.pi
 
 
 def PDE_u2(t, x1, x2):
-    return -2 * np.sin(t) * np.power(np.sin(np.pi * x2), 2) * np.sin(np.pi * x1) * np.cos(np.pi * x1) * np.pi
+    return -2 * torch.sin(t) * torch.pow(torch.sin(torch.pi * x2), 2) * torch.sin(torch.pi * x1) * torch.cos(torch.pi * x1) * torch.pi
 
 
 def PDE_p(t, x1, x2):
-    return np.sin(t) * np.cos(np.pi * x1) * np.cos(np.pi * x2)
+    return torch.sin(t) * torch.cos(torch.pi * x1) * torch.cos(torch.pi * x2)

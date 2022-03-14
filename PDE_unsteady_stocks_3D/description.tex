@@ -7,17 +7,18 @@
 \begin{document}
 \maketitle
 
-$$unsteady-stocks-2D$$
+$$unsteady-stocks-3D$$
 $$\bold v_{t}- \alpha \nabla^{2} \bold v+ \nabla p  = \bold f,\ \  in \ \ \bold  \Omega_{T}$$
 $$\nabla \cdot \bold v=0,\ \ in \ \bold \Omega_{T}$$
 $$\bold v |_{\partial\Omega}=0,\ \ on \ \ \partial \bold \Omega_{T}$$
 $$\bold v |_{t=0}=\bold v_{0},\ \ on \ \ \bold \Omega$$ \\
 $$\alpha=0.025$$
-$$\bold v=[u_{1}(t,x_{1},x_{2}),u_{2}(t,x_{1},x_{2})]$$
-$$x_{1}\in [0,1] ,x_{2} \in [0,1],t \in [0,1]$$
-$$u_{1}(t,x_{1},x_{2})=2sin(t)sin(\pi x_{1})^{2}sin(\pi x_{2})cos(\pi x_{2})\pi$$
-$$u_{2}(t,x_{1},x_{2})=-2sin(t)sin(\pi x_{2})^{2}sin(\pi x_{1})cos(\pi x_{1})\pi$$
-$$p(t,x_{1},x_{2})=sin(t)cos(\pi x_{1})cos(\pi x_{2})$$
+$$\bold v=[u_{1}(t,x),u_{2}(t,x),u_{3}(t,x)]$$
+$$x_{1}\in [0,1] ,x_{2} \in [0,1],x_{3} \in [0,1],t \in [0,1]$$
+$$u_{1}(t,x)=sin(t)sin(\pi x_{1})^{2}(sin(2 \pi x_{2})sin(\pi x_{3})^{2}-sin(\pi x_{2})^{2}sin(2 \pi x_{3}))$$
+$$u_{2}(t,x)=sin(t)sin(\pi x_{2})^{2}(sin(2 \pi x_{3})sin(\pi x_{1})^{2}-sin(\pi x_{3})^{2}sin(2 \pi x_{1}))$$
+$$u_{1}(t,x)=sin(t)sin(\pi x_{3})^{2}(sin(2 \pi x_{1})sin(\pi x_{2})^{2}-sin(\pi x_{1})^{2}sin(2 \pi x_{2}))$$
+$$p(t,x)=sin(t)sin(\pi x_{1})sin(\pi x_{2})cos(\pi x_{3})$$
 
 
 
